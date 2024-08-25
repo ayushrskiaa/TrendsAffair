@@ -50,10 +50,20 @@ export class News extends Component {
 
     }
 
+
+    handlePrevClick = async () => {
+console.log("Previous");
+    }
+
+    handleNextClick = async () => {
+      console.log("Next");
+    }
+
+
   render()
   {
       return(
-      <div className = 'container my-3 border border border-dark  float-right' style={{borderRadius:'10px'}} >
+      <div className = 'container my-3 border border border-dark  float-right text-center' style={{borderRadius:'10px'}} >
         <h2>Top headlines of today</h2>
 
         <div className="row my-3  ">
@@ -63,6 +73,11 @@ export class News extends Component {
             </div>
           })}
 
+            <div className="container d-flex justify-content-between">
+              <button type='button' className='btn btn-dark' onClick={this.handlePrevClick}>&larr; Prev </button>
+              <button type='button' className='btn btn-dark' onClick={this.handleNextClick}>Next &rarr;</button>
+
+            </div>
         </div>
       </div>
     );
