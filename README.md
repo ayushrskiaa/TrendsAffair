@@ -1,6 +1,3 @@
-Here's a simple **README** file for your **TrendsAffair** project:
-
----
 
 # TrendsAffair
 
