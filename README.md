@@ -9,6 +9,8 @@
 - **Category-wise News:** Browse news by categories like technology, sports, health, entertainment, etc.
 - **Responsive Design:** Optimized for both desktop and mobile devices, ensuring a smooth experience on any screen size.
 - **Search Functionality:** Easily search for news articles based on specific keywords.
+
+  
   
 ## Tech Stack
 
