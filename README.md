@@ -1,6 +1,6 @@
 # 📰 NewsApp
 
-NewsApp is a React-based web application that fetches and displays the latest news headlines from around the world. The application uses the News API to retrieve news articles and displays them in a user-friendly interface.
+NewsApp is a React-based web application that fetches and displays the latest news headlines from around the world. The application uses the News API to retrieve news articles and displays them in a user-friendly interfaces.
 
 ## 📁 Project Structure
 newsapp/ ├── .gitignore ├── package.json ├── public/ │ ├── favicon.ico │ ├── image.png │ ├── index.html │ ├── logo192.png │ ├── logo512.png │ ├── manifest.json │ ├── robots.txt ├── README.md ├── sampleOutput.json ├── src/ │ ├── App.css │ ├── App.js │ ├── App.test.js │ ├── components/ │ │ ├── navbar.js │ │ ├── News.js │ │ ├── NewsItem.js │ ├── index.css │ ├── index.js │ ├── logo.svg │ ├── reportWebVitals.js │ ├── setupTests.js
