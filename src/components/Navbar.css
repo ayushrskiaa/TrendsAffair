@@ -1,0 +1,162 @@
+/* Navbar Base */
+.navbar {
+  background-color: #ffc107;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+  padding: 8px 0;
+  background-color: rgba(255, 193, 7, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* Brand */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #212529 !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand i {
+  font-size: 1.5rem;
+}
+
+.navbar-scrolled .navbar-brand {
+  font-size: 1.2rem;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  color: #212529 !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Search Form */
+.search-form {
+  max-width: 350px;
+  width: 100%;
+}
+
+.input-group {
+  border-radius: 25px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  border: none;
+  padding-left: 15px;
+  height: 42px;
+  border-radius: 25px 0 0 25px !important;
+}
+
+.search-input:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.search-btn {
+  background-color: #071a07;
+  color: #ffc107;
+  border: none;
+  padding: 0 15px;
+  border-radius: 0 25px 25px 0 !important;
+  transition: all 0.3s ease;
+  z-index: 5;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  height: 42px; /* Match the input height */
+}
+
+/* Important - explicitly set icon visibility and size */
+.search-btn i {
+  font-size: 16px;
+  color: #ffc107; /* Make sure color is bright enough */
+  display: inline-block !important;
+  line-height: 1;
+}
+
+.search-btn:hover {
+  background-color: #343a40;
+  transform: translateX(2px);
+}
+
+.clear-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 25px !important;
+  width: 42px;
+  height: 42px;
+  transition: all 0.3s ease;
+  margin-left: 5px; /* Add some spacing from the search button */
+  z-index: 5; /* Ensure the button appears above other elements */
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar spacer to handle fixed navbar */
+.navbar-spacer {
+  height: 90px; /* Increased height to provide more space below navbar */
+}
+
+/* Mobile Optimization */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    padding: 10px 0;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+  
+  .search-form {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+  .navbar-collapse {
+    background-color: #ffc107;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .navbar-scrolled .navbar-collapse {
+    background-color: rgba(255, 193, 7, 0.95);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Ensure buttons are visible on mobile */
+  .search-btn,
+  .clear-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+  }
+}
+
+/* For tablets and mid-sized screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .search-form {
+    max-width: 300px;
+    margin: 10px auto 0;
+  }
+}
